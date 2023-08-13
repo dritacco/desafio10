@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <main class="Main">
+
+        <div id="form__container" class="form__container">
+
+            <h1>Complete el Formulario:</h1>
+            <form class="form__form">
+
+                    <div class="form__group">
+
+                        <div class="form__A">
+                            <div class="form__nombre">
+                                <label for="nombre" class="form__label">Primer nombre</label>
+                                    <input type="text" name="nombre" id="nombre" class="form__bar" required="">
+                                    <p class="form__msj" id="msj__nombre"></p>
+                            </div>
+                            <div class="form__apellido">
+                                <label for="lastName" class="form__label">Primer apellido:</label>
+                                <input type="text" name="lastName" id="apellido" class="form__bar" required="">
+                                <p class="form__msj" id="msj__apellido"></p>
+                            </div>
+                        </div>
+
+                    <div class="form__B">
+                        <div class="form__dni">
+                            <label for="dniType" class="form__label">Tipo de documento:</label>
+                            <div class="dni__radio">
+                                <input type="radio" name="dniType" class="form__radio" required="">DNI
+                                <input type="radio" name="dniType" class="form__radio" required="">CUIL
+                                <p id="msj__tipo-documento"></p>
+                            </div>
+                        </div>
+                        <div class="form__dniNumber">
+                            <label for="dniNumber" class="form__label">Número de documento:</label>
+                            <input type="text" name="dniNumber" id="documento" class="form__bar" required="">
+                            <p id="msj__documento"></p>
+                        </div>
+                    </div>
+
+                    <div class="form__address">
+                        <label for="address" class="form__label">Dirección:</label>
+                        <input type="text" name="address" id="direccion" class="form__bar" required="">
+                        <p class="form__msj" id="msj__direccion"></p>
+                    </div>
+                </div>
+
+                <button class="form__submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <script src="../src/js/main.js"></script>
+</body>
+
+</html>

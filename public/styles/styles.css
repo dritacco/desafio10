@@ -1,0 +1,170 @@
+html {
+  background-image: url(../../public/images/7468.jpg);
+  background-size: cover; /*se adapte proporcionalmente para cubrir toda la pantalla*/
+}
+
+/* // Header */ /* // Main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__container button:active {
+  scale: 0.95;
+}
+
+.form__container .form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.form__container .form__group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #8a8989;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__container .form__group input {
+  width: 80%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fefdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  border: 1px solid #b8b7b7;
+}
+
+.form__container .form__group input::placeholder {
+  opacity: 0.5;
+}
+
+.form__container .form__group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form__container .form__submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #d7d3d3;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form__container .form__submit-btn:hover {
+  background-color: #e87110;
+  border-color: #fff;
+}
+
+@media (min-width: 250px) {
+  .form__container {
+    width: 80%;
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+    border: 3px solid transparent;
+    padding: 16px 12px;
+    margin: 20px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  .form__dni {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__dni .dni__radio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 425px) {
+  .Main .form__nombre {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .Main .form__apellido {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .Main .form__dni {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .Main .form__dniNumber {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .Main #direccion {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .Main h1 {
+    text-decoration: underline;
+    margin-bottom: 50px;
+    color: #8a8989;
+  }
+  .Main #form__container {
+    width: 70%;
+  }
+  .Main .form__A {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  .Main .form__A .form__nombre, .Main .form__A .form__apellido {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 45%;
+    margin-bottom: 15px;
+  }
+  .Main .form__bar {
+    padding: 12px 16px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .Main .form__B {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .Main .form__B .form__label {
+    margin-right: 10px;
+  }
+  .Main .form__B .form__dni {
+    margin-right: 50px;
+  }
+  .Main #direccion {
+    width: 90%;
+  }
+  .Main .form__submit-btn {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}
+/* // Footer */
